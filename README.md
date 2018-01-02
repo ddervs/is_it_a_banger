@@ -8,7 +8,7 @@
 
 - [ X ] `split_files.sh` to do training and test, positive and negative examples. Will split training and test in code.
 
-- python script to load individual files into TFRecords format? Will try all data in notebook for now...
+- python script to load individual files into TFRecords format? Will try all data in notebook for now... Use pandas dataframe then pickle. Sample some proportion of data  uniformly at random to save space and so that there are fewer correlations in training data.
 
 - Have a look at ipynb notebook again, now not crashing, but very slow. FFmpeg being slow, might need preprocessing into TFrecords? Using `librosa` now, faster. Preconverted to `.wav` now.
 
