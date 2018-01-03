@@ -26,6 +26,7 @@
 
 - librosa features
 
+- Comment on a better way to store the data?
 
 ### Learning
 
