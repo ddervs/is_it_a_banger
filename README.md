@@ -14,6 +14,7 @@
 
 - First try model with `identity` applied to batches, to check data pipeline correct.
 
+- [ ] For storage of dataset pickle file, use google drive for now (maybe also  http://www.filedropper.com)
 
 ### Analysis
 
