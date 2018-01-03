@@ -1,4 +1,6 @@
 *.mp3
 *~
 *.wav
-raw_mp3/*
+raw_mp3/
+*.pkl
+.ipynb_checkpoints/
