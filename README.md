@@ -10,21 +10,23 @@
 
 - [ X ] python script to load individual files into TFRecords format? Will try all data in notebook for now... Use pandas dataframe then pickle. Sample some proportion of data  uniformly at random to save space and so that there are fewer correlations in training data.
 
-- Continue working with notebook from `aqibsaeed`.
+- Continue working with notebook from `aqibsaeed`. Move on to `dk1027` notebook.
 
 - First try model with `identity` applied to batches, to check data pipeline correct.
 
 - [ ] For storage of dataset pickle file, use google drive for now (maybe also  http://www.filedropper.com)
 
+- [ ] Generate full dataset and shorten window to ~1 second.
+
 ### Analysis
 
-- Convert audio samples to log spectrogram.
+- [ X ] Convert audio samples to log spectrogram.
 
 - Will probably have to downsample a lot.
 
 - Think about structural properties that can allow us to eliminate nodes.
 
-- librosa features
+- librosa features?
 
 - Comment on a better way to store the data?
 
