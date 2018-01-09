@@ -1,7 +1,7 @@
 #!/bin/bash
-# call me with mp3length.sh directory
-# e.g. ./mp3length . 
-# or ./mp3length my-mp3-collection
+# Usage: ./mp3length.sh $DIR
+#
+# Script that calculates the total length of all mp3 audio files in $DIR in seconds (not exact).
 
 TMP_FILE=$(mktemp)
 
