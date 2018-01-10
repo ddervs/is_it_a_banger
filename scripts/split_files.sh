@@ -17,8 +17,7 @@ for FILE in "${DATA_ROOT_DIR}"/**/*.mp3
 do 
     echo "Processing ${FILE}"
     ffmpeg -i "${FILE}" -f segment -segment_time ${SEGMENT_TIME} -c copy "${FILE%.*}_"%03d.wav                
-    rm "${FILE}" 
-    rm "$(ls -t "${FILE%.*}"*.wav | head -n 1)" # remove last file so uniform length
-
+    #rm "${FILE}" 
+    echo "$(ls -1 "${FILE%.*}"*.wav | sort -V | tail -n 1)" # remove last file so uniform length
 done
 
