@@ -7,7 +7,7 @@
 # $SEGMENT_TIME is length of *.wav clips
 # $DATA_ROOT_DIR is root directory of mp3 audio data
 
-SEGMENT_TIME=$1  
+SEGMENT_TIME="$1"  
 DATA_ROOT_DIR="$2"
 
 # Make sure globstar is enabled
