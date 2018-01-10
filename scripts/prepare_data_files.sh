@@ -11,7 +11,7 @@
 # $SEGMENT_TIME is length of each .wav clip (in seconds)
 
 DATA_ROOT_DIR="$1"
-SEGMENT_TIME=$2
+SEGMENT_TIME="$2"
 
 # Make sure globstar is enabled
 shopt -s globstar
@@ -22,6 +22,6 @@ do
     echo "Processing ${FILE} for class \"$(basename ${TARGET_DIR})\""
  
     ./download_playlists.sh ${TARGET_DIR} ${FILE}
-    ./split_files.sh ${SEGMENT_TIME} ${DATA_ROOT_DIR}
+    ./split_files.sh ${DATA_ROOT_DIR} ${SEGMENT_TIME} 
 
 done

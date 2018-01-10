@@ -10,13 +10,11 @@
 
 - [ X ] python script to load individual files into TFRecords format? Will try all data in notebook for now... Use pandas dataframe then pickle. Sample some proportion of data  uniformly at random to save space and so that there are fewer correlations in training data.
 
-- Continue working with notebook from `aqibsaeed`. Move on to `dk1027` notebook.
+- [ X ] Continue working with notebook from `aqibsaeed`. Move on to `dk1027` notebook.
 
 - First try model with `identity` applied to batches, to check data pipeline correct.
 
-- [ ] For storage of dataset pickle file, use google drive for now (maybe also  http://www.filedropper.com)
-
-- [ ] Generate full dataset and shorten window to ~1 second.
+- youtube links include bangers, "selected, blanc" channels. not\_a\_banger is lumineers, enya, cliff richard haha
 
 ### Analysis
 
