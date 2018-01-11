@@ -4,8 +4,8 @@
 #
 # script prepares clipped *.wav files in a base data dir from youtube URLs.
 #
-# note that urls for each class must be in text file $DATA_ROOT_DIR/$CLASS_NAME/url.txt, 
-# one per line
+# note that urls for each class must be in a text file $DATA_ROOT_DIR/$CLASS_NAME/*.txt, 
+# one URL per line
 #
 # $DATA_ROOT_DIR is directory with subdirectories for each class.
 # $SEGMENT_TIME is length of each .wav clip (in seconds)
@@ -18,7 +18,7 @@ SCRIPTS_DIR=$(dirname $0)
 # Make sure globstar is enabled
 shopt -s globstar
 
-for FILE in "${DATA_ROOT_DIR}"/**/url.txt
+for FILE in "${DATA_ROOT_DIR}"/**/*.txt
 do
     TARGET_DIR="$(cd "$(dirname "$FILE")"; pwd)/" 
     echo "Processing ${FILE} for class \"$(basename ${TARGET_DIR})\""
