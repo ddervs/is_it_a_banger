@@ -16,7 +16,7 @@ shopt -s globstar
 for FILE in "${DATA_ROOT_DIR}"/**/*.mp3
 do 
     echo "Processing ${FILE}"
-    ffmpeg -i "${FILE}" -f segment -segment_time ${SEGMENT_TIME} -c copy "${FILE%.*}_"%03d.wav                
+    ffmpeg -i "${FILE}" -f segment -segment_time ${SEGMENT_TIME} -c copy "${FILE%.*}_"%04d.wav                
     #rm "${FILE}" 
     echo "$(ls -1 "${FILE%.*}"*.wav | sort -V | tail -n 1)" # remove last file so uniform length
 done

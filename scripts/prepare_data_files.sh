@@ -13,6 +13,8 @@
 DATA_ROOT_DIR="$1"
 SEGMENT_TIME="$2"
 
+SCRIPTS_DIR=$(dirname $0)
+
 # Make sure globstar is enabled
 shopt -s globstar
 
@@ -21,7 +23,7 @@ do
     TARGET_DIR="$(cd "$(dirname "$FILE")"; pwd)/" 
     echo "Processing ${FILE} for class \"$(basename ${TARGET_DIR})\""
  
-    ./download_playlists.sh ${TARGET_DIR} ${FILE}
-    ./split_files.sh ${DATA_ROOT_DIR} ${SEGMENT_TIME} 
+    ${SCRIPTS_DIR}/download_playlists.sh ${TARGET_DIR} ${FILE}
+    ${SCRIPTS_DIR}/split_files.sh ${DATA_ROOT_DIR} ${SEGMENT_TIME} 
 
 done

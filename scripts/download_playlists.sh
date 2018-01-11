@@ -15,7 +15,7 @@ while read line; do
     if [ "$line" != "" ]; then
       echo "Reading URL ${line}"
       echo "Track IDs:"
-      youtube-dl --get-id "${line}" -i | tee $TMP_FILE  
+      youtube-dl --get-id "${line}" -i | tee -a $TMP_FILE  
     fi
 
 done <$2

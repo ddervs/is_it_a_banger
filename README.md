@@ -1,5 +1,7 @@
 # Is it a banger?
 
+Python 3 virtualenv
+
 ## TODOs
 
 `tf.set_random_seed(1234)`
@@ -15,6 +17,8 @@
 - First try model with `identity` applied to batches, to check data pipeline correct.
 
 - youtube links include bangers, "selected, blanc" channels. not\_a\_banger is lumineers, enya, cliff richard haha
+
+- Note: data generating script won't work in virtualenv.
 
 ### Analysis
 
