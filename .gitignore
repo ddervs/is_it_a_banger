@@ -5,3 +5,5 @@ raw_mp3/
 *.pkl
 .ipynb_checkpoints/
 *rawmp3*
+*.ckpt.*
+*checkpoint
